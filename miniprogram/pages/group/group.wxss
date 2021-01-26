@@ -1,0 +1,85 @@
+.line {
+    margin: 0 auto;
+    height: 1px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #D8D8D8;
+}
+
+.flex-wrp-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    color: black;
+}
+
+.item {
+    padding: 1rpx;
+    position: relative;
+
+}
+
+.item-left {
+    flex: 1;
+    /* 重要 */
+    align-items: center;
+}
+
+.item-right {
+    position: relative;
+    align-items: center;
+}
+
+.icon-left {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-right {
+    width: 20px;
+    height: 20px;
+}
+
+.desc-left {
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.desc-right {
+    margin-right: 20px;
+    line-height: 20px;
+}
+
+.x1 {
+    font-size: 24px;
+}
+
+.item1 {
+    margin-top: 10rpx;
+    margin-bottom: 100rpx;
+}
+
+.item2 {
+    margin-top: 10rpx;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.item3 {
+    margin-left: 20px;
+    line-height: 30px;
+    color: black;
+}
+
+.item4 {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    color: black;
+}
+
+.item5 {
+    position: absolute;
+    right: 25px;
+}

@@ -1,0 +1,184 @@
+<view>
+	<picker bindchange="nameMethod" value="{{nameIndex}}" range="{{nameArray}}">
+		<view class='flex-wrp-row item'>
+			<view class='item-left flex-wrp-row'>
+				<image src='../images/f1.png' class='icon-left' mode='aspectFit'></image>
+				<text decode="{{true}}">&nbsp;&nbsp;姓名</text>
+			</view>
+
+			<view class='item-right flex-wrp-row'>
+				<text decode="{{true}}">{{name}}&nbsp;&nbsp;</text>
+				<text decode="{{true}}" class="x1">&gt;&nbsp;&nbsp;</text>
+			</view>
+		</view>
+	</picker>
+	<view class="line"></view>
+
+	<picker bindchange="groupMethod" value="{{groupIndex}}" range="{{groupArray}}">
+		<view class='flex-wrp-row item'>
+			<view class='item-left flex-wrp-row'>
+				<image src='../images/f1.png' class='icon-left' mode='aspectFit'></image>
+				<text decode="{{true}}">&nbsp;&nbsp;小组</text>
+			</view>
+
+			<view class='item-right flex-wrp-row'>
+				<text decode="{{true}}">{{group}}&nbsp;&nbsp;</text>
+				<text decode="{{true}}" class="x1">&gt;&nbsp;&nbsp;</text>
+			</view>
+		</view>
+	</picker>
+	<view class="line"></view>
+
+	<picker bindchange="work1Method" value="{{work1Index}}" range="{{work1Array}}">
+		<view class='flex-wrp-row item'>
+			<view class='item-left flex-wrp-row'>
+				<image src='../images/f2.png' class='icon-left' mode='aspectFit'></image>
+				<text decode="{{true}}">&nbsp;&nbsp;重点工作1</text>
+			</view>
+			<view class='item-right flex-wrp-row'>
+				<text decode="{{true}}">{{work1}}&nbsp;&nbsp;</text>
+				<text decode="{{true}}" class="x1">&gt;&nbsp;&nbsp;</text>
+			</view>
+		</view>
+	</picker>
+	<view class="line"></view>
+
+	<picker bindchange="work2Method" value="{{work2Index}}" range="{{work2Array}}">
+		<view class='flex-wrp-row item'>
+			<view class='item-left flex-wrp-row'>
+				<image src='../images/f2.png' class='icon-left' mode='aspectFit'></image>
+				<text decode="{{true}}">&nbsp;&nbsp;重点工作2</text>
+			</view>
+			<view class='item-right flex-wrp-row'>
+				<text decode="{{true}}">{{work2}}&nbsp;&nbsp;</text>
+				<text decode="{{true}}" class="x1">&gt;&nbsp;&nbsp;</text>
+			</view>
+		</view>
+	</picker>
+	<view class="line"></view>
+
+	<picker bindchange="work3Method" value="{{work3Index}}" range="{{work3Array}}">
+		<view class='flex-wrp-row item'>
+			<view class='item-left flex-wrp-row'>
+				<image src='../images/f2.png' class='icon-left' mode='aspectFit'></image>
+				<text decode="{{true}}">&nbsp;&nbsp;重点工作3</text>
+			</view>
+			<view class='item-right flex-wrp-row'>
+				<text decode="{{true}}">{{work3}}&nbsp;&nbsp;</text>
+				<text decode="{{true}}" class="x1">&gt;&nbsp;&nbsp;</text>
+			</view>
+		</view>
+	</picker>
+	<view class="line"></view>
+
+	<picker bindchange="work4Method" value="{{work4Index}}" range="{{work4Array}}">
+		<view class='flex-wrp-row item'>
+			<view class='item-left flex-wrp-row'>
+				<image src='../images/f2.png' class='icon-left' mode='aspectFit'></image>
+				<text decode="{{true}}">&nbsp;&nbsp;重点工作4</text>
+			</view>
+			<view class='item-right flex-wrp-row'>
+				<text decode="{{true}}">{{work4}}&nbsp;&nbsp;</text>
+				<text decode="{{true}}" class="x1">&gt;&nbsp;&nbsp;</text>
+			</view>
+		</view>
+	</picker>
+	<view class="line"></view>
+
+	<picker bindchange="work5Method" value="{{work5Index}}" range="{{work5Array}}">
+		<view class='flex-wrp-row item'>
+			<view class='item-left flex-wrp-row'>
+				<image src='../images/f2.png' class='icon-left' mode='aspectFit'></image>
+				<text decode="{{true}}">&nbsp;&nbsp;重点工作5</text>
+			</view>
+			<view class='item-right flex-wrp-row'>
+				<text decode="{{true}}">{{work5}}&nbsp;&nbsp;</text>
+				<text decode="{{true}}" class="x1">&gt;&nbsp;&nbsp;</text>
+			</view>
+		</view>
+	</picker>
+	<view class="line"></view>
+
+	<picker bindchange="work6Method" value="{{work6Index}}" range="{{work6Array}}">
+		<view class='flex-wrp-row item'>
+			<view class='item-left flex-wrp-row'>
+				<image src='../images/f2.png' class='icon-left' mode='aspectFit'></image>
+				<text decode="{{true}}">&nbsp;&nbsp;重点工作6</text>
+			</view>
+			<view class='item-right flex-wrp-row'>
+				<text decode="{{true}}">{{work6}}&nbsp;&nbsp;</text>
+				<text decode="{{true}}" class="x1">&gt;&nbsp;&nbsp;</text>
+			</view>
+		</view>
+	</picker>
+	<view class="line"></view>
+
+	<picker bindchange="work7Method" value="{{work7Index}}" range="{{work7Array}}">
+		<view class='flex-wrp-row item'>
+			<view class='item-left flex-wrp-row'>
+				<image src='../images/f2.png' class='icon-left' mode='aspectFit'></image>
+				<text decode="{{true}}">&nbsp;&nbsp;重点工作7</text>
+			</view>
+			<view class='item-right flex-wrp-row'>
+				<text decode="{{true}}">{{work7}}&nbsp;&nbsp;</text>
+				<text decode="{{true}}" class="x1">&gt;&nbsp;&nbsp;</text>
+			</view>
+		</view>
+	</picker>
+	<view class="line"></view>
+
+	<picker bindchange="work8Method" value="{{work8Index}}" range="{{work8Array}}">
+		<view class='flex-wrp-row item'>
+			<view class='item-left flex-wrp-row'>
+				<image src='../images/f2.png' class='icon-left' mode='aspectFit'></image>
+				<text decode="{{true}}">&nbsp;&nbsp;重点工作8</text>
+			</view>
+			<view class='item-right flex-wrp-row'>
+				<text decode="{{true}}">{{work8}}&nbsp;&nbsp;</text>
+				<text decode="{{true}}" class="x1">&gt;&nbsp;&nbsp;</text>
+			</view>
+		</view>
+	</picker>
+	<view class="line"></view>
+
+	<picker bindchange="work9Method" value="{{work9Index}}" range="{{work9Array}}">
+		<view class='flex-wrp-row item'>
+			<view class='item-left flex-wrp-row'>
+				<image src='../images/f2.png' class='icon-left' mode='aspectFit'></image>
+				<text decode="{{true}}">&nbsp;&nbsp;重点工作9</text>
+			</view>
+			<view class='item-right flex-wrp-row'>
+				<text decode="{{true}}">{{work9}}&nbsp;&nbsp;</text>
+				<text decode="{{true}}" class="x1">&gt;&nbsp;&nbsp;</text>
+			</view>
+		</view>
+	</picker>
+	<view class="line"></view>
+
+	<picker bindchange="work10Method" value="{{work10Index}}" range="{{work10Array}}">
+		<view class='flex-wrp-row item'>
+			<view class='item-left flex-wrp-row'>
+				<image src='../images/f2.png' class='icon-left' mode='aspectFit'></image>
+				<text decode="{{true}}">&nbsp;&nbsp;重点工作10</text>
+			</view>
+			<view class='item-right flex-wrp-row'>
+				<text decode="{{true}}">{{work10}}&nbsp;&nbsp;</text>
+				<text decode="{{true}}" class="x1">&gt;&nbsp;&nbsp;</text>
+			</view>
+		</view>
+	</picker>
+	<view class="line"></view>
+
+	<view class="item2" wx:if="{{total == 10}}">
+		<view class="item1">
+			<text bindtap="vote">投票</text>
+		</view>
+	</view>
+
+	<view class="item3">
+		<text class="item4">投票数共10分，已投{{total}}分，</text>
+		<text decode="{{true}}" wx:if="{{total < 10}}">不能投票</text>
+		<text decode="{{true}}" wx:if="{{total == 10}}">可以投票</text>
+		<text decode="{{true}}" wx:if="{{total > 10}}">不能投票</text>
+	</view>
+</view>

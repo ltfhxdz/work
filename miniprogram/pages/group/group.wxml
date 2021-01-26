@@ -1,0 +1,26 @@
+<picker bindchange="teamMethod" value="{{teamIndex}}" range="{{teamArray}}">
+    <view class='flex-wrp-row item'>
+        <view class='item-left flex-wrp-row'>
+            <image src='../images/f1.png' class='icon-left' mode='aspectFit'></image>
+            <text decode="{{true}}">&nbsp;&nbsp;小组</text>
+        </view>
+
+        <view class='item-right flex-wrp-row'>
+            <text decode="{{true}}">{{team}}&nbsp;&nbsp;</text>
+            <text decode="{{true}}" class="x1">&gt;&nbsp;&nbsp;</text>
+        </view>
+    </view>
+</picker>
+<scroll-view scroll-y="true" class="item1">
+    <block wx:key="item" wx:for="{{workArray}}">
+        <view data-index='{{index}}' class="item2">
+            <view class="item3">
+                <view class="item4">
+                    <view>{{item.work}}</view>
+                    <view class="item5">{{item.vote}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="line"></view>
+    </block>
+</scroll-view>

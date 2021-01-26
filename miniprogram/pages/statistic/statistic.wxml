@@ -1,0 +1,18 @@
+<scroll-view scroll-y="true" class="item1">
+    <block wx:key="item" wx:for="{{workArray}}">
+        <view data-index='{{index}}' class="item2">
+            <view class="item3">
+                <view class="item4">
+                    <view>{{item.work}}</view>
+                    <view class="item5">{{item.vote}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="line"></view>
+    </block>
+</scroll-view>
+<view class="item7">
+    <view class="item6">
+        <text bindtap="query">刷新</text>
+    </view>
+</view>
