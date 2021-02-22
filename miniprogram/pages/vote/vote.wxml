@@ -1,17 +1,19 @@
-<view>
-	<picker bindchange="nameMethod" value="{{nameIndex}}" range="{{nameArray}}">
-		<view class='flex-wrp-row item'>
-			<view class='item-left flex-wrp-row'>
-				<image src='../images/f1.png' class='icon-left' mode='aspectFit'></image>
-				<text decode="{{true}}">&nbsp;&nbsp;姓名</text>
-			</view>
+<view class="item5"  wx:if="{{isLogin}}">
+	<button open-type="getUserInfo" bindgetuserinfo="userInfoHandler"> 登录 </button>
+</view>
 
-			<view class='item-right flex-wrp-row'>
-				<text decode="{{true}}">{{name}}&nbsp;&nbsp;</text>
-				<text decode="{{true}}" class="x1">&gt;&nbsp;&nbsp;</text>
-			</view>
+<view>
+	<view class='flex-wrp-row item'>
+		<view class='item-left flex-wrp-row'>
+			<image src='../images/f1.png' class='icon-left' mode='aspectFit'></image>
+			<text decode="{{true}}">&nbsp;&nbsp;姓名</text>
 		</view>
-	</picker>
+
+		<view class='item-right flex-wrp-row'>
+			<text decode="{{true}}">{{nickname}}&nbsp;&nbsp;</text>
+			<text decode="{{true}}" class="x1">&nbsp;&nbsp;</text>
+		</view>
+	</view>
 	<view class="line"></view>
 
 	<picker bindchange="groupMethod" value="{{groupIndex}}" range="{{groupArray}}">

@@ -64,7 +64,7 @@ Page({
     this.downSort(this.data.testArray);
   },
 
-  upSort:function(array){
+  upSort: function (array) {
     for (let i = 1; i < array.length; i++) {
       for (let j = 0; j < array.length - i; j++) {
         if (parseInt(array[j].vote) > parseInt(array[j + 1].vote)) {
@@ -77,13 +77,13 @@ Page({
         }
       }
     }
-    
+
     for (let x in array) {
       console.log(array[x]);
     }
   },
 
-  downSort:function(array){
+  downSort: function (array) {
     for (let i = 1; i < array.length; i++) {
       for (let j = 0; j < array.length - i; j++) {
         if (parseInt(array[j].vote) < parseInt(array[j + 1].vote)) {
@@ -96,14 +96,14 @@ Page({
         }
       }
     }
-    
+
     for (let x in array) {
       console.log(array[x]);
     }
   },
 
   vote: function () {
-    if (wx.getStorageSync('name') == "") {
+    if (wx.getStorageSync('nickname') == "") {
       wx.showToast({
         title: '请选择姓名',
         icon: 'none',
@@ -113,7 +113,7 @@ Page({
       return;
     }
 
-    let name = this.data.nameArray[wx.getStorageSync('name')];
+    let name = wx.getStorageSync('nickname');
 
     if (wx.getStorageSync('group') == "") {
       wx.showToast({
@@ -199,13 +199,6 @@ Page({
       fail: err => {
         console.error('[数据库] [查询记录] 失败：', err)
       }
-    })
-  },
-
-  nameMethod: function (e) {
-    wx.setStorageSync('name', e.detail.value);
-    this.setData({
-      name: this.data.nameArray[e.detail.value]
     })
   },
 
@@ -378,6 +371,18 @@ Page({
 
   },
 
+
+  userInfoHandler: function (e) {
+    if (e.detail.userInfo) {
+      wx.setStorageSync('nickname', e.detail.userInfo.nickName);
+      this.setData({
+        isLogin: false,
+        nickname: e.detail.userInfo.nickName,
+        gender: e.detail.userInfo.gender
+      })
+    }
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -397,9 +402,13 @@ Page({
    */
   onShow: function () {
     this.total();
+    let isLogin = false;
+    if (wx.getStorageSync('nickname') == "") {
+      isLogin = true;
+    }
 
     this.setData({
-      nameIndex: wx.getStorageSync('name'),
+      isLogin: isLogin,
       groupIndex: wx.getStorageSync('group'),
       work1Index: wx.getStorageSync('work1'),
       work2Index: wx.getStorageSync('work2'),
@@ -411,7 +420,7 @@ Page({
       work8Index: wx.getStorageSync('work8'),
       work9Index: wx.getStorageSync('work9'),
       work10Index: wx.getStorageSync('work10'),
-      name: this.data.nameArray[wx.getStorageSync('name')],
+      nickname: wx.getStorageSync('nickname'),
       group: this.data.groupArray[wx.getStorageSync('group')],
       work1: this.data.work1Array[wx.getStorageSync('work1')],
       work2: this.data.work2Array[wx.getStorageSync('work2')],

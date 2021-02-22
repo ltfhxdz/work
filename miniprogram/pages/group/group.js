@@ -139,10 +139,10 @@ Page({
    */
   onShow: function () {
     this.query();
-    
+
     this.setData({
-      teamIndex: wx.getStorageSync('team'),
-      team: this.data.teamArray[wx.getStorageSync('team')],
+      teamIndex: 0,
+      team: this.data.teamArray[0],
     })
   },
 

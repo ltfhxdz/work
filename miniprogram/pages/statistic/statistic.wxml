@@ -13,6 +13,6 @@
 </scroll-view>
 <view class="item7">
     <view class="item6">
-        <text bindtap="query">刷新</text>
+        <text bindtap="refresh">刷新</text>
     </view>
 </view>
