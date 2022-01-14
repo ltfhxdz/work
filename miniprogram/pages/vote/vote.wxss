@@ -93,5 +93,5 @@
   flex-direction: column;
   width: 100%;
   background-color: whitesmoke;
-  margin-top: 50rpx;
+  margin-top: 30rpx;
 }

@@ -105,7 +105,7 @@ Page({
   vote: function () {
     if (wx.getStorageSync('nickname') == "") {
       wx.showToast({
-        title: '请选择姓名',
+        title: '请登录',
         icon: 'none',
         duration: 2000,
         mask: true
